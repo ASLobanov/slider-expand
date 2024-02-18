@@ -1,0 +1,29 @@
+.button--section-one-item {
+  background-image: url(../icon/button.svg);
+  background-color: #fff;
+}
+.swiper-slide > button {
+  margin-left: auto;
+}
+/* Стили для кнопок */
+.button {
+  width: 40px;
+  height: 40px;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+}
+.expand-button {
+  display: none;
+  cursor: pointer;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}

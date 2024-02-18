@@ -1,0 +1,130 @@
+@import url(button.css);
+
+/* Альтернативная блочная модель */
+
+html {
+  box-sizing: border-box;
+}
+
+/* Убираем отступы */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTlakes-regular/TTLakes-Regular.eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"),
+    url("../fonts/TTlakes-regular/TTLakes-Regular.woff") format("woff"),
+    url("../fonts/TTlakes-regular/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.repair-brands {
+  margin: 1rem 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(126, 126, 130, 1);
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 1120px;
+  margin: auto;
+  font-family: "TT Lakes";
+}
+
+.expand-button.expand > #text-without-expand {
+  display: none;
+}
+
+.expand-button.expand > img {
+  transform: rotate(180deg);
+}
+
+.expand-button:not(.expand) > #text-with-expand {
+  display: none;
+}
+
+.swiper {
+  width: 251px;
+  height: 200px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 242px !important;
+  height: 72px;
+  border: solid 1px #eaeaea;
+  border-radius: 0.5rem;
+}
+.swiper-wrapper {
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .expand-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119.99px) {
+  .swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  .swiper-wrapper div:nth-child(n + 7) {
+    display: none;
+  }
+
+  .expand div:nth-child(n + 7) {
+    display: flex;
+  }
+}
+
+@media (min-width: 1120px) {
+  .swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  .swiper-wrapper div:nth-child(n + 9) {
+    display: none;
+  }
+
+  .expand div:nth-child(n + 9) {
+    display: flex;
+  }
+}
