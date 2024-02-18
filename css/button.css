@@ -28,5 +28,6 @@
   outline: inherit;
 }
 .expand-button::before {
-  content: "url(/icon/icon-open.svg)";
+  content: url(/icon/icon-open.svg);
+  display: block;
 }
