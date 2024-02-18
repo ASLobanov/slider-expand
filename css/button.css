@@ -15,7 +15,6 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  display: flex;
 }
 .expand-button {
   display: none;
@@ -27,4 +26,7 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+.expand-button::before {
+  content: url(/icon/icon-open.svg);
 }

@@ -119,11 +119,20 @@ h2 {
     display: flex;
   }
 }
+.wrap-button {
+  margin-left: 1rem;
+}
+#text-without-expand {
+  margin-left: 1rem;
+}
+#text-with-expand {
+  margin-left: 1rem;
+}
 .expand-button.expand > #text-without-expand {
   display: none;
 }
 
-.expand-button.expand > img {
+.expand-button.expand::before {
   transform: rotate(180deg);
 }
 
