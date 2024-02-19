@@ -10,18 +10,23 @@ if (width < 766) {
   });
 }
 
-// Handle onclick expand button
-const EXPAND_BUTTON = document.querySelector(".expand-button");
-const SWIPER_WRAPPER = document.querySelector(".swiper-wrapper");
+// Handle onclick expand buttn
+const expandButton = document.querySelector(".expand-button");
+const swiperWrapper = document.querySelector(".swiper-wrapper");
+const btn = document.querySelector(".expand-button > span");
 
-EXPAND_BUTTON.addEventListener("click", () => {
-  const isExpand = EXPAND_BUTTON.classList.contains("expand");
+expandButton.addEventListener("click", () => {
+  const isExpand = expandButton.classList.contains("expand");
 
   if (isExpand) {
-    EXPAND_BUTTON.classList.remove("expand");
-    SWIPER_WRAPPER.classList.remove("expand");
+    expandButton.classList.remove("expand");
+    swiperWrapper.classList.remove("expand");
   } else {
-    EXPAND_BUTTON.classList.add("expand");
-    SWIPER_WRAPPER.classList.add("expand");
+    expandButton.classList.add("expand");
+    swiperWrapper.classList.add("expand");
   }
+  btn.textContent;
+  btn.textContent === "Показать все"
+    ? (btn.textContent = "Скрыть")
+    : (btn.textContent = "Показать все");
 });
