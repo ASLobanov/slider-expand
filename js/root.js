@@ -21,12 +21,18 @@ expandButton.addEventListener("click", () => {
   if (isExpand) {
     expandButton.classList.remove("expand");
     swiperWrapper.classList.remove("expand");
+    btn.textContent = "Показать все";
   } else {
     expandButton.classList.add("expand");
     swiperWrapper.classList.add("expand");
+    btn.textContent = "Скрыть";
   }
+});
+
+/*
   btn.textContent;
   btn.textContent === "Показать все"
     ? (btn.textContent = "Скрыть")
     : (btn.textContent = "Показать все");
 });
+*/
